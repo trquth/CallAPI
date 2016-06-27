@@ -1,22 +1,18 @@
-﻿@model  List<SSC.Core.Api.Models.Entity.UserEntity>
+﻿@model  List<TQTCallAPI.ViewModel.ProductViewModel>
 <h2>List User</h2>
 @if (Model != null)
 {
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Full Name</th>
-                <th>User Name</th>
-                <th>Email</th>
+                <th>Name</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>@item.FullName</td>
-                    <td>@item.Username</td>
-                    <td>@item.Email</td>
+                    <td>@item.Name</td>
                 </tr>
             }
         </tbody>
@@ -24,8 +20,6 @@
 }
 else
 {
-    <p>Empty!!!</p>
+    <p>Empty!!!!</p>
 }
-
-
 
